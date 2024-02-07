@@ -81,6 +81,10 @@ body {
     font-size: 24px;
 }
 
+.apresentacao__conteudo__links__botao:hover { /*ao passar o mouse o codigo abaixo sera ativado */
+    background-color: #272727;
+}
+
 .apresentacao__conteudo__links__subtitulo {
     font-family: 'Krona one', sans-serif;
     font-weight: 400;
