@@ -12,7 +12,7 @@ body {
     color:#F6F6F6; /*cor da fonte do texto*/
 }
 
-.titulo-destaque {
+.apresentacao__conteudo__titulo__destaque {
     color: #22D4FD;
 }
 
@@ -26,6 +26,9 @@ body {
 
 .apresentacao__conteudo {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
 }
 
 .apresentacao__conteudo__titulo {
@@ -39,30 +42,43 @@ body {
 .apresentacao__conteudo__links {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-.apresentacao__conteudo__links a { /*todas as tags 'a' dentro da classe especificada*/
+/*
+/*todas as tags 'a' dentro da classe especificada
+.apresentacao__conteudo__links a {
     background-color: #22D4FD;
-    width: 280px; /*largura*/
-    text-align: center; /*alinha apenas o texto*/
-    border-radius: 16px; /*insere um arredondamento na borda*/
-    font-size: 24px; /*tamanho da fonte*/
-    padding-top: 21.5px 0; /*quando usamos dois valores, serão alterados, altura e largura (nesta ordem)*/
-    text-decoration: none; /*remove todos os estilos predefinidos*/
+    width: 280px; /*largura
+    text-align: center; /*alinha apenas o texto
+    border-radius: 16px; /*insere um arredondamento na borda
+    font-size: 24px; /*tamanho da fonte
+    padding-top: 21.5px 0; /*quando usamos dois valores, serão alterados, altura e largura (nesta ordem)
+    text-decoration: none; /*remove todos os estilos predefinidos
     color:black;
-    font-family: 'Krona one', sans-serif;
+    font-family: 'Krona one', sans-serif;    
 }
+*/
 
 
 .apresentacao__conteudo__links__botao {
-    background-color: #22D4FD;
+    /* background-color: #22D4FD; */
+    border: 3px solid #22D4FD;
     width: 280px; /*largura*/
     text-align: center; /*alinha apenas o texto*/
     border-radius: 16px; /*insere um arredondamento na borda*/
     font-size: 24px; /*tamanho da fonte*/
-    padding-top: 21.5px 0; /*quando usamos dois valores, serão alterados, altura e largura (nesta ordem)*/
+    padding: 21.5px 0; /*quando usamos dois valores, serão alterados, altura e largura (nesta ordem)*/
     text-decoration: none; /*remove todos os estilos predefinidos*/
-    color:black;
+    /* color:black; */
+    color: white;
     font-family: 'Krona one', sans-serif;
+    font-size: 24px;
 }
 
+.apresentacao__conteudo__links__subtitulo {
+    font-family: 'Krona one', sans-serif;
+    font-weight: 400;
+}
