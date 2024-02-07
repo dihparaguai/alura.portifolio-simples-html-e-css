@@ -65,6 +65,9 @@ body {
 
 .apresentacao__conteudo__links__botao {
     /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     border: 3px solid #22D4FD;
     width: 280px; /*largura*/
     text-align: center; /*alinha apenas o texto*/
@@ -81,4 +84,11 @@ body {
 .apresentacao__conteudo__links__subtitulo {
     font-family: 'Krona one', sans-serif;
     font-weight: 400;
+}
+
+.apresentacao__imagem {
+    max-width:750px;
+    max-height:500px;
+    width: auto;
+    height: auto;
 }
