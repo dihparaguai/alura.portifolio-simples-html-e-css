@@ -6,10 +6,11 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     box-sizing: border-box;
     background-color: black; /*cor de fundo da tela*/
     color:#F6F6F6; /*cor da fonte do texto*/
+    
 }
 
 .apresentacao__conteudo__titulo__destaque {
@@ -21,7 +22,7 @@ body {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10%;
+    padding: 8% 15%;
 }
 
 .apresentacao__conteudo {
@@ -95,4 +96,14 @@ body {
     max-height:500px;
     width: auto;
     height: auto;
+}
+
+.rodape {
+    text-align: center;
+    padding: 24px;
+    color: #000000;
+    background-color: #22D4FD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400px;
 }
