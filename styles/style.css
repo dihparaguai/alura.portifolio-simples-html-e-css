@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root { /* declaracao de variaveis */
+    --preto: #0000;
+    --quase-branco: #f6f6f6;
+    --azul-claro: #22d4fd;
+    --azul-escuro: #007bff;
+    --hover-preto-claro: #272727;
+
+    --font-krona-one: 'Krona one', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--preto); /*cor de fundo da tela*/
+    color:#F6F6F6; /*cor da fonte do texto*/
+    
 }
 
 .cabecalho {
@@ -15,23 +34,15 @@
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-montserrat);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--azul-claro);
     text-decoration: none;
 }
 
 .cabecalho__menu__link:hover {
-    color: #007bff;
-}
-
-body {
-    /* height: 100vh; */
-    box-sizing: border-box;
-    background-color: black; /*cor de fundo da tela*/
-    color:#F6F6F6; /*cor da fonte do texto*/
-    
+    color: var(--azul-escuro);
 }
 
 .apresentacao {
@@ -46,7 +57,7 @@ body {
     width: 615px;
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 30px;
 }
 
 .apresentacao__conteudo__titulo {
@@ -54,7 +65,7 @@ body {
 }
 
 .apresentacao__conteudo__titulo__destaque {
-    color: #22D4FD;
+    color: var(--azul-claro);
 }
 
 .apresentacao__conteudo__paragrafo {
@@ -90,25 +101,25 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 3px solid #22D4FD;
-    width: 280px; /*largura*/
-    text-align: center; /*alinha apenas o texto*/
-    border-radius: 16px; /*insere um arredondamento na borda*/
-    font-size: 24px; /*tamanho da fonte*/
-    padding: 21.5px 0; /*quando usamos dois valores, serão alterados, altura e largura (nesta ordem)*/
-    text-decoration: none; /*remove todos os estilos predefinidos*/
+    border: 3px solid var(--azul-claro); /* usando uma variavel para definir a cor */
+    width: 280px; /* largura */
+    text-align: center; /* alinha apenas o texto */
+    border-radius: 16px; /* insere um arredondamento na borda */
+    font-size: 24px; /* tamanho da fonte */
+    padding: 21.5px 0; /* quando usamos dois valores, serão alterados, altura e largura (nesta ordem) */
+    text-decoration: none; /* remove todos os estilos predefinidos */
     /* color:black; */
-    color: white;
-    font-family: 'Krona one', sans-serif;
+    color: var(--quase-branco);
+    font-family: var(--preto);
     font-size: 24px;
 }
 
 .apresentacao__conteudo__links__botao:hover { /*ao passar o mouse o codigo abaixo sera ativado */
-    background-color: #272727;
+    background-color: var(--hover-preto-claro);
 }
 
 .apresentacao__conteudo__links__subtitulo {
-    font-family: 'Krona one', sans-serif;
+    font-family: var(--font-krona-one);
     font-weight: 400;
 }
 
@@ -122,9 +133,9 @@ body {
 .rodape {
     text-align: center;
     padding: 24px;
-    color: #000000;
-    background-color: #22D4FD;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--preto);
+    background-color: var(--azul-claro);
+    font-family: var(--font-montserrat);
     font-size: 24px;
     font-weight: 400px;
 }
